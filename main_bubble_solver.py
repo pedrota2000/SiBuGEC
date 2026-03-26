@@ -48,9 +48,9 @@ BUBBLE_ENERGY_RANGE     = (1e-6, ETL)         # (E_C_min, E_C_max)
 # ---------------------------------------------------------------------------
 # Resolution (increase for publication-quality results)
 # ---------------------------------------------------------------------------
-XIW_RESOLUTION     = 50   # Wall-velocity grid points
-EN_RESOLUTION      = 50   # Energy grid points per axis
-CONTOUR_RESOLUTION = 500  # Resolution for separator/contour lines
+XIW_RESOLUTION     = 25   # Wall-velocity grid points
+EN_RESOLUTION      = 25   # Energy grid points per axis
+CONTOUR_RESOLUTION = 150  # Resolution for separator/contour lines
 
 # ---------------------------------------------------------------------------
 # Optional: path to a custom EoS file (set to None to use analytic model)

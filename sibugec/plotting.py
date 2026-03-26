@@ -585,7 +585,7 @@ def _batch_plot(ax_det, ax_C, ax_alpha, flows, marker, label, ms, alphan_func):
     eCs  = [r[2] for r in flows]
     ax_det.plot(xiws, es,   marker, label=label, ms=ms)
     ax_C.plot(xiws,   eCs,  marker, label=label, ms=ms)
-    ax_alpha.plot(xiws, np.vectorize(alphan_func)(np.array(es)), marker, label=label, ms=ms)
+    ax_alpha.plot(xiws, np.array(list(map(alphan_func, es))), marker, label=label, ms=ms)
 
 
 def _pack_flows(flows, alphan_func):
@@ -594,7 +594,7 @@ def _pack_flows(flows, alphan_func):
     eCs  = np.array([r[2] for r in flows])
     return {
         'xi': xiws, 'eC': eCs, 'eN': es,
-        'alpha': np.vectorize(alphan_func)(es),
+        'alpha': np.array(list(map(alphan_func, es))),
         'flows': flows,
     }
 
@@ -610,7 +610,7 @@ def _entropy_overlay(ax_det, ax_C, ax_alpha, flows, bad_arr, marker, ms, alphan_
         return
     ax_det.plot(xiws[sel], es[sel],   marker, ms=ms)
     ax_C.plot(xiws[sel],   eCs[sel],  marker, ms=ms)
-    ax_alpha.plot(xiws[sel], np.vectorize(alphan_func)(es[sel]), marker, ms=ms)
+    ax_alpha.plot(xiws[sel], np.array(list(map(alphan_func, es[sel]))), marker, ms=ms)
 
 
 def _on_click(event, ax_det, ax_C, ax_alpha,
