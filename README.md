@@ -11,8 +11,7 @@ phase transitions, for a general equation of state.
 
 - Interactive EoS explorer with real-time thermodynamic plots (GUI).
 - Full phase-space computation: detonations, deflagrations, and hybrids.
-- Automatic separator curves: Chapman–Jouguet, Jouguet, hybrid onset,
-  limiting detonation, and entropy-production boundaries.
+- Automatic separator curves for different type of solutions.
 - Click-to-inspect: click any point in the phase-space plot to display
   the corresponding velocity and energy profiles.
 - Built-in α_N (phase-transition strength) computation.
