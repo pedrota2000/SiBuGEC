@@ -17,7 +17,7 @@ phase transitions, for a general equation of state.
   the corresponding velocity and energy profiles.
 - Built-in α_N (phase-transition strength) computation.
 - **Custom EoS support**: load tabulated (e, p) data from a plain-text
-  file and replace the analytic parametrisations entirely.
+  file and replace the analytic parametrisations entirely. ** WORK IN PROGRESS **
 - Parallel computation via `concurrent.futures`.
 - Optional result pickling for post-processing.
 
@@ -88,7 +88,7 @@ fig, ax = interactive_bubble_plot(
 
 ---
 
-## Custom EoS
+## Custom EoS (WIP)
 
 To replace the analytic model with tabulated data, provide a plain-text
 file with two (or three) columns:
