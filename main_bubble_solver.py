@@ -68,6 +68,8 @@ OUTPUT_DIR   = "."     # Directory for output files
 # Main
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
+    from sibugec import print_logo
+    print_logo()
     custom_pplus  = None
     custom_pminus = None
     custom_cs2_p  = None

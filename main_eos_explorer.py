@@ -40,6 +40,13 @@ from sibugec.thermodynamics import (
     find_critical_temperature,
 )
 from sibugec.plotting import interactive_bubble_plot
+from sibugec import print_logo
+
+# ---------------------------------------------------------------------------
+# Startup
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    print_logo()
 
 # ---------------------------------------------------------------------------
 # Optional: path to a custom EoS file.

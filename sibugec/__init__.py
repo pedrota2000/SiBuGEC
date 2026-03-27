@@ -1,18 +1,14 @@
-"""
-SiBuGEC — Self-similar Bubble Expansion with General Equation of State Code
+def print_logo():
+    """Print the SiBuGEC ASCII logo to the terminal."""
+    print(r"""
+   _____ _ _           _____ ______ _____
+  / ____(_) |         / ____|  ____/ ____|
+ | (___  _| |__  _   _| |  __| |__ | |
+  \___ \| | '_ \| | | | | |_ |  __|| |
+  ____) | | |_) | |_| | |__| | |___| |____
+ |_____/|_|_.__/ \__,_|\_____|______\_____|
+    """)
 
-A Python package for computing hydrodynamic bubble solutions
-(detonations, deflagrations, and hybrids) arising during cosmological
-first-order phase transitions, for a general equation of state.
-
-Modules
--------
-eos           : Equation-of-state models and custom EoS loader
-thermodynamics: Entropy ODEs, temperature, free energy, critical temperature
-hydrodynamics : Junction conditions and flow solvers
-separators    : Phase-space separator and contour finders
-plotting      : Interactive phase-space bubble plot
-"""
 
 from .eos import pplus, pminus, speed_of_sound_squared, load_custom_eos
 from .thermodynamics import (
@@ -29,6 +25,7 @@ __all__ = [
     "pminus",
     "speed_of_sound_squared",
     "load_custom_eos",
+    "print_logo",
     "entropy_ODE_plus",
     "entropy_ODE_minus",
     "calculate_temperature",
