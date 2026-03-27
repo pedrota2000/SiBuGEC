@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="sibugec_logo.png" alt="SiBuGEC Logo" width="600">
+</p>
+
 # SiBuGEC
 ## Self-similar Bubble Expansion with General Equation of State Code
 
