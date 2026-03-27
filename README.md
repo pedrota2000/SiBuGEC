@@ -1,9 +1,12 @@
-<p align="center">
-  <img src="sibugec_logo.png" alt="SiBuGEC Logo" width="600">
-</p>
+
 
 # SiBuGEC
 ## Self-similar Bubble Expansion with General Equation of State Code
+
+
+<p align="center">
+  <img src="sibugec_logo.png" alt="SiBuGEC Logo" width="600">
+</p>
 
 SiBuGEC computes self-similar hydrodynamic bubble solutions
 (detonations, deflagrations, and hybrids) for cosmological first-order
